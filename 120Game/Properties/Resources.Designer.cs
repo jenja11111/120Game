@@ -133,6 +133,16 @@ namespace _120Game.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Старт {
+            get {
+                object obj = ResourceManager.GetObject("Старт", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Фон {
             get {
                 object obj = ResourceManager.GetObject("Фон", resourceCulture);

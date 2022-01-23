@@ -114,5 +114,8 @@
   <ItemGroup>
     <None Include="Resources\Фон.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Старт.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

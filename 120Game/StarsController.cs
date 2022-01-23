@@ -39,7 +39,7 @@ namespace _120Game
                 {
                     sizes[i] = stars[i].Size;
 
-                    stars[i].Size = new Size(325, 300);
+                    stars[i].Size = new Size(stars[i].Size.Width + 50, stars[i].Size.Height + 30);
 
                     await Task.Delay(100);
 
@@ -58,7 +58,7 @@ namespace _120Game
                 {
                     sizes[i] = stars[i].Size;
 
-                    stars[i].Size = new Size(325, 300);
+                    stars[i].Size = new Size(stars[i].Size.Width + 50, stars[i].Size.Height + 30);
 
                     await Task.Delay(300);
 
@@ -73,7 +73,7 @@ namespace _120Game
             {              
                 sizes[i] = stars[i].Size;
 
-                stars[i].Size = new Size(350, 325);
+                stars[i].Size = new Size(stars[i].Size.Width + 70, stars[i].Size.Height + 50);
 
                 await Task.Delay(300);
                 if (i == SearchStar(stars.Count-1))
