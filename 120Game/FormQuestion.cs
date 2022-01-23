@@ -15,6 +15,9 @@ namespace _120Game
         public FormQuestion()
         {
             InitializeComponent();
+
+
+
         }
 
         private void buttonAnswer_Click(object sender, EventArgs e)
