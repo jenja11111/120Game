@@ -33,15 +33,15 @@ namespace _120Game
         {
             int T = 0;
 
-            while (T < 3)
+            while (T < 2)
             {
                 for (int i = 0; i < stars.Count; i++)
                 {
                     sizes[i] = stars[i].Size;
 
-                    stars[i].Size = new Size(stars[i].Size.Width + 50, stars[i].Size.Height + 30);
+                    stars[i].Size = new Size(stars[i].Size.Width + stars[i].Size.Width/10, stars[i].Size.Height + stars[i].Size.Height/10);
 
-                    await Task.Delay(100);
+                    await Task.Delay(300);
 
                     stars[i].Size = sizes[i];
                 }
@@ -52,15 +52,15 @@ namespace _120Game
 
             T = 0;
 
-            while (T < 2)
+            while (T < 1)
             {
                 for (int i = 0; i < stars.Count; i++)
                 {
                     sizes[i] = stars[i].Size;
 
-                    stars[i].Size = new Size(stars[i].Size.Width + 50, stars[i].Size.Height + 30);
+                    stars[i].Size = new Size(stars[i].Size.Width + stars[i].Size.Width / 10, stars[i].Size.Height + stars[i].Size.Height / 10);
 
-                    await Task.Delay(300);
+                    await Task.Delay(500);
 
                     stars[i].Size = sizes[i];
                 }
@@ -73,9 +73,9 @@ namespace _120Game
             {              
                 sizes[i] = stars[i].Size;
 
-                stars[i].Size = new Size(stars[i].Size.Width + 70, stars[i].Size.Height + 50);
+                stars[i].Size = new Size(stars[i].Size.Width + stars[i].Size.Width / 10, stars[i].Size.Height + stars[i].Size.Height / 10);
 
-                await Task.Delay(300);
+                await Task.Delay(500);
                 if (i == SearchStar(stars.Count-1))
                 {
                     starIndex = i;
