@@ -13,7 +13,7 @@ namespace _120Game
     {
         List<Control> stars = new List<Control>();
         Size[] sizes;
-        int starIndex;
+        public int starIndex = 1;
 
         public StarsController() { }
 
@@ -80,14 +80,14 @@ namespace _120Game
                 {
                     starIndex = i+1;
                     await Task.Delay(300);
-                    stars[i].Size = sizes[i];
-                    FormQuestion frm = new FormQuestion(starIndex);
-                    frm.ShowDialog();
+                    stars[i].Size = sizes[i];                    
                     break;
                 }
-
                 stars[i].Size = sizes[i];
-            }           
+            }
+
+            FormQuestion frm = new FormQuestion(starIndex);
+            frm.Show();
         }
 
         public int SearchStar(int starsCount)

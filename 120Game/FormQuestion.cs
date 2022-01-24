@@ -78,7 +78,7 @@ namespace _120Game
             }
             if(File.Exists(filesPath + "\\Images\\" + question + ".png"))
             {
-                img = new ImageForm(Image.FromFile(filesPath + "\\Images\\" + question + ".png"));                
+                img = new ImageForm(Image.FromFile(filesPath + "\\Images\\" + question + ".png"));
                 img.Show();
                 img.Location = new Point(800, 300);
             }
@@ -87,8 +87,11 @@ namespace _120Game
         private void buttonClose_Click(object sender, EventArgs e)
         {
             if (img != null)
+            {
                 img.Close();
-            Close();          
+            }
+            Close();       
         }
+
     }
 }
