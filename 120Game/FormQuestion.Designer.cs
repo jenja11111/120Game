@@ -119,6 +119,7 @@
             this.pictureBoxQRCode.Size = new System.Drawing.Size(150, 150);
             this.pictureBoxQRCode.TabIndex = 6;
             this.pictureBoxQRCode.TabStop = false;
+            this.pictureBoxQRCode.Visible = false;
             // 
             // buttonClose
             // 

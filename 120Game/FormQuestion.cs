@@ -49,6 +49,7 @@ namespace _120Game
         private void buttonAnswer_Click(object sender, EventArgs e)
         {
             labelAnswer.Visible = true;
+            pictureBoxQRCode.Visible = true;
             buttonAnswer.Visible = false;
             buttonClose.Visible = true;          
         }
@@ -69,7 +70,7 @@ namespace _120Game
         private void formControlsAdd(string filesPath) 
         {
             Random rnd = new Random();
-            int question = rnd.Next(1, 20);
+            int question = 4;//rnd.Next(1, 20);
             labelQuestion.Text = QSecurity[question];
             if(File.Exists(filesPath + "\\QCode\\" + question + ".png"))
             {
@@ -87,7 +88,7 @@ namespace _120Game
         {
             if (img != null)
                 img.Close();
-            Close();     
+            Close();          
         }
     }
 }
