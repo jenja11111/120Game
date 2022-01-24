@@ -12,7 +12,6 @@ namespace _120Game
 {
     public partial class MainForm : Form
     {
-
         public MainForm()
         {
             InitializeComponent();
@@ -26,7 +25,7 @@ namespace _120Game
 
             pictureBoxBackground.Controls.Add(pictureBoxButtonStart);
 
-            pictureBoxButtonStart.Location = new Point(Width / 2 - pictureBoxButtonStart.Width / 2, Height - Height/6);
+            pictureBoxButtonStart.Location = new Point(Width / 2 - pictureBoxButtonStart.Width / 2, Height - Height / 6);
 
             pictureBoxBackground.Controls.Add(pictureBoxStar1);
 
@@ -36,12 +35,12 @@ namespace _120Game
             pictureBoxBackground.Controls.Add(pictureBoxStar2);
 
             pictureBoxStar2.Size = new Size((int)(Width / 5.5), (int)(Height / 3.5));
-            pictureBoxStar2.Location = new Point(Width / 30, Height/2 - pictureBoxStar2.Height / 2);
+            pictureBoxStar2.Location = new Point(Width / 30, Height / 2 - pictureBoxStar2.Height / 2);
 
             pictureBoxBackground.Controls.Add(pictureBoxStar3);
 
             pictureBoxStar3.Size = new Size((int)(Width / 5.5), (int)(Height / 3.5));
-            pictureBoxStar3.Location = new Point(Width / 10, Height/30);
+            pictureBoxStar3.Location = new Point(Width / 10, Height / 30);
 
             pictureBoxBackground.Controls.Add(pictureBoxStar4);
 
@@ -80,6 +79,7 @@ namespace _120Game
 
             starsController.ZoomStars();
 
+
             await Task.Delay(10000);
 
             pictureBoxStart.Enabled = true;
@@ -96,8 +96,6 @@ namespace _120Game
                 if (DialogResult.OK == MessageBox.Show("Вы уверены, что хотите выйти?", "Подтверждение", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning))
                     Application.Exit();
             }
-
-
         }
     }
 }
