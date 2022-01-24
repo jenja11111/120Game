@@ -78,17 +78,16 @@ namespace _120Game
                 await Task.Delay(500);
                 if (i == SearchStar(stars.Count-1))
                 {
-                    starIndex = i;
+                    starIndex = i+1;
                     await Task.Delay(300);
                     stars[i].Size = sizes[i];
+                    FormQuestion frm = new FormQuestion(starIndex);
+                    frm.ShowDialog();
                     break;
                 }
 
                 stars[i].Size = sizes[i];
-            }
-
-            FormQuestion frm = new FormQuestion();
-            frm.ShowDialog();
+            }           
         }
 
         public int SearchStar(int starsCount)
@@ -96,7 +95,8 @@ namespace _120Game
             Random rnd = new Random();
             int star = rnd.Next(0, starsCount);
 
-            return star;
+            //return star;
+            return 2;
         }
     }
 }

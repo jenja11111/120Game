@@ -96,8 +96,6 @@ namespace _120Game
                 if (DialogResult.OK == MessageBox.Show("Вы уверены, что хотите выйти?", "Подтверждение", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning))
                     Application.Exit();
             }
-
-
         }
     }
 }

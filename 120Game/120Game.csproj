@@ -52,6 +52,12 @@
     <Compile Include="FormQuestion.Designer.cs">
       <DependentUpon>FormQuestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageForm.Designer.cs">
+      <DependentUpon>ImageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="StarsController.cs" />
     <EmbeddedResource Include="FormQuestion.resx">
       <DependentUpon>FormQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageForm.resx">
+      <DependentUpon>ImageForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -118,7 +127,36 @@
     <None Include="Resources\Старт.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Questions\Security\" />
+    <Content Include="bin\Debug\Questions\Security\Images\10.png" />
+    <Content Include="bin\Debug\Questions\Security\Images\12.png" />
+    <Content Include="bin\Debug\Questions\Security\Images\13.png" />
+    <Content Include="bin\Debug\Questions\Security\Images\18.png" />
+    <Content Include="bin\Debug\Questions\Security\Images\4.png" />
+    <Content Include="bin\Debug\Questions\Security\Images\6.png" />
+    <Content Include="bin\Debug\Questions\Security\Images\7.png" />
+    <Content Include="bin\Debug\Questions\Security\Images\8.png" />
+    <Content Include="bin\Debug\Questions\Security\Images\9.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\1.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\10.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\11.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\12.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\13.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\14.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\15.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\16.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\17.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\18.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\19.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\2.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\20.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\3.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\4.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\5.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\6.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\7.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\8.png" />
+    <Content Include="bin\Debug\Questions\Security\QCode\9.png" />
+    <Content Include="bin\Debug\Questions\Security\Security.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
