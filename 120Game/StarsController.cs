@@ -13,7 +13,6 @@ namespace _120Game
     {
         List<Control> stars = new List<Control>();
         Size[] sizes;
-        public int starIndex = 1;
 
         public StarsController() { }
 
@@ -69,6 +68,8 @@ namespace _120Game
                 T++;
             }
 
+            int star = SearchStar(stars.Count);
+
             for (int i = 0; i < stars.Count; i++)
             {              
                 sizes[i] = stars[i].Size;
@@ -76,17 +77,17 @@ namespace _120Game
                 stars[i].Size = new Size(stars[i].Size.Width + stars[i].Size.Width / 10, stars[i].Size.Height + stars[i].Size.Height / 10);
 
                 await Task.Delay(500);
-                if (i == SearchStar(stars.Count-1))
+                if (i == star)
                 {
-                    starIndex = i+1;
-                    await Task.Delay(300);
+                    star++;
+                    await Task.Delay(600);
                     stars[i].Size = sizes[i];                    
                     break;
                 }
                 stars[i].Size = sizes[i];
             }
 
-            FormQuestion frm = new FormQuestion(starIndex);
+            FormQuestion frm = new FormQuestion(star);
             frm.Show();
         }
 
@@ -95,8 +96,7 @@ namespace _120Game
             Random rnd = new Random();
             int star = rnd.Next(0, starsCount);
 
-            //return star;
-            return 2;
+            return star;
         }
     }
 }

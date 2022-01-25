@@ -86,6 +86,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\120Game.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -127,6 +128,8 @@
     <None Include="Resources\Старт.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\120Game.exe" />
+    <Content Include="bin\Debug\120Game.pdb" />
     <Content Include="bin\Debug\Questions\Health\Health.txt" />
     <Content Include="bin\Debug\Questions\Health\QCode\1.png" />
     <Content Include="bin\Debug\Questions\Health\QCode\10.jpg" />

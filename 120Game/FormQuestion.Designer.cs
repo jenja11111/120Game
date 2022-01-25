@@ -37,6 +37,8 @@
             this.panelBottom = new System.Windows.Forms.Panel();
             this.pictureBoxQRCode = new System.Windows.Forms.PictureBox();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.labelNameQuestion = new System.Windows.Forms.Label();
+            this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRCode)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +46,7 @@
             // 
             this.labelQuestion.AutoSize = true;
             this.labelQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelQuestion.Location = new System.Drawing.Point(172, 59);
+            this.labelQuestion.Location = new System.Drawing.Point(72, 70);
             this.labelQuestion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelQuestion.Name = "labelQuestion";
             this.labelQuestion.Size = new System.Drawing.Size(478, 29);
@@ -55,10 +57,10 @@
             // 
             this.buttonAnswer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAnswer.Location = new System.Drawing.Point(306, 267);
+            this.buttonAnswer.Location = new System.Drawing.Point(306, 284);
             this.buttonAnswer.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAnswer.Name = "buttonAnswer";
-            this.buttonAnswer.Size = new System.Drawing.Size(209, 66);
+            this.buttonAnswer.Size = new System.Drawing.Size(209, 49);
             this.buttonAnswer.TabIndex = 1;
             this.buttonAnswer.Text = "Ответ";
             this.buttonAnswer.UseVisualStyleBackColor = true;
@@ -88,6 +90,7 @@
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panelTop.Controls.Add(this.labelNameQuestion);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(40, 0);
             this.panelTop.Name = "panelTop";
@@ -114,9 +117,10 @@
             // 
             // pictureBoxQRCode
             // 
-            this.pictureBoxQRCode.Location = new System.Drawing.Point(337, 110);
+            this.pictureBoxQRCode.Location = new System.Drawing.Point(329, 127);
             this.pictureBoxQRCode.Name = "pictureBoxQRCode";
             this.pictureBoxQRCode.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxQRCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxQRCode.TabIndex = 6;
             this.pictureBoxQRCode.TabStop = false;
             this.pictureBoxQRCode.Visible = false;
@@ -125,15 +129,26 @@
             // 
             this.buttonClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonClose.Location = new System.Drawing.Point(307, 267);
+            this.buttonClose.Location = new System.Drawing.Point(307, 284);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(4);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(208, 66);
+            this.buttonClose.Size = new System.Drawing.Size(208, 49);
             this.buttonClose.TabIndex = 1;
             this.buttonClose.Text = "Закрыть";
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Visible = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+            // 
+            // labelNameQuestion
+            // 
+            this.labelNameQuestion.AutoSize = true;
+            this.labelNameQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNameQuestion.Location = new System.Drawing.Point(193, 9);
+            this.labelNameQuestion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNameQuestion.Name = "labelNameQuestion";
+            this.labelNameQuestion.Size = new System.Drawing.Size(381, 25);
+            this.labelNameQuestion.TabIndex = 0;
+            this.labelNameQuestion.Text = "Вопрос 1:  название данной программы";
             // 
             // FormQuestion
             // 
@@ -153,6 +168,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormQuestion";
             this.Text = "FormQuestion";
+            this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRCode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -170,5 +187,6 @@
         private System.Windows.Forms.Panel panelBottom;
         private System.Windows.Forms.PictureBox pictureBoxQRCode;
         private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Label labelNameQuestion;
     }
 }
