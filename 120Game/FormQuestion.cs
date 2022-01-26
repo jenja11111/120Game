@@ -32,6 +32,8 @@ namespace _120Game
         public FormQuestion(int star)
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
+            Icon = Properties.Resources.Icon;
             this.star = star;
             switch (this.star)
             {
@@ -105,7 +107,6 @@ namespace _120Game
 
         private void buttonAnswer_Click(object sender, EventArgs e)
         {
-            labelAnswer.Visible = true;
             pictureBoxQRCode.Visible = true;
             buttonAnswer.Visible = false;
             buttonClose.Visible = true;          
@@ -143,12 +144,14 @@ namespace _120Game
                     }
                     if (File.Exists(filesPath + "\\Images\\" + question + ".png") || File.Exists(filesPath + "\\Images\\" + question + ".jpg"))
                     {
+                        StartPosition = FormStartPosition.Manual;
+                        Location = new Point(100,300);
                         if (File.Exists(filesPath + "\\Images\\" + question + ".png"))
                             img = new ImageForm(Image.FromFile(filesPath + "\\Images\\" + question + ".png"));
                         else
                             img = new ImageForm(Image.FromFile(filesPath + "\\Images\\" + question + ".jpg"));
                         img.Show();
-                        img.Location = new Point(800, 300);
+                        img.Location = new Point(800, 200);
                     }
 
                     Q.Remove(question);

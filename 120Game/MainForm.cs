@@ -15,6 +15,8 @@ namespace _120Game
         public MainForm()
         {
             InitializeComponent();
+            Icon = Properties.Resources.Icon;
+
             pictureBoxBackground.Controls.Add(pictureBoxStart);
 
             pictureBoxStart.Size = new Size((int)(Width / 2.5), (int)(Height / 1.75));
@@ -58,7 +60,7 @@ namespace _120Game
             pictureBoxStar6.Location = new Point(Width - Width / 10 - pictureBoxStar6.Width, Height - (int)(Height / 3));
         }
 
-        private void ControlsLoad(ref PictureBox pBox, Size size, Point point)
+        private void ControlsLoad(ref PictureBox pBox, Size size, Point point) //Метод для инициализации каждой звезды, но почему-то работает криво.
         {
             pictureBoxBackground.Controls.Add(pBox);
 
@@ -69,6 +71,7 @@ namespace _120Game
         private async void pictureBoxStart_Click(object sender, EventArgs e)
         {
             pictureBoxStart.Enabled = false;
+            pictureBoxButtonStart.Enabled = false;
 
             StarsController starsController = new StarsController(ref pictureBoxStar1,
                                                                   ref pictureBoxStar2,
@@ -83,11 +86,12 @@ namespace _120Game
             await Task.Delay(10000);
 
             pictureBoxStart.Enabled = true;
+            pictureBoxButtonStart.Enabled = true;
         }
 
         private void MainForm_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyValue == (char)Keys.Enter)
+            if (e.KeyValue == (char)Keys.Enter && pictureBoxStart.Enabled)
             {
                 pictureBoxStart_Click(pictureBoxStart, null);
             }
