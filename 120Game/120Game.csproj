@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\BigIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -273,6 +273,7 @@
     <Content Include="bin\Debug\Questions\Security\QCode\8.png" />
     <Content Include="bin\Debug\Questions\Security\QCode\9.png" />
     <Content Include="bin\Debug\Questions\Security\Security.txt" />
+    <None Include="Resources\BigIcon.ico" />
     <None Include="Resources\Icon.ico" />
     <None Include="Resources\6b.png" />
     <None Include="Resources\5b.png" />
