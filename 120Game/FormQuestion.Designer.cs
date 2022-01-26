@@ -33,11 +33,11 @@
             this.labelAnswer = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.panelTop = new System.Windows.Forms.Panel();
+            this.labelNameQuestion = new System.Windows.Forms.Label();
             this.panelRight = new System.Windows.Forms.Panel();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.pictureBoxQRCode = new System.Windows.Forms.PictureBox();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.labelNameQuestion = new System.Windows.Forms.Label();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQRCode)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +97,17 @@
             this.panelTop.Size = new System.Drawing.Size(789, 40);
             this.panelTop.TabIndex = 3;
             // 
+            // labelNameQuestion
+            // 
+            this.labelNameQuestion.AutoSize = true;
+            this.labelNameQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNameQuestion.Location = new System.Drawing.Point(193, 9);
+            this.labelNameQuestion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNameQuestion.Name = "labelNameQuestion";
+            this.labelNameQuestion.Size = new System.Drawing.Size(381, 25);
+            this.labelNameQuestion.TabIndex = 0;
+            this.labelNameQuestion.Text = "Вопрос 1:  название данной программы";
+            // 
             // panelRight
             // 
             this.panelRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -138,17 +149,6 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Visible = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
-            // 
-            // labelNameQuestion
-            // 
-            this.labelNameQuestion.AutoSize = true;
-            this.labelNameQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNameQuestion.Location = new System.Drawing.Point(193, 9);
-            this.labelNameQuestion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelNameQuestion.Name = "labelNameQuestion";
-            this.labelNameQuestion.Size = new System.Drawing.Size(381, 25);
-            this.labelNameQuestion.TabIndex = 0;
-            this.labelNameQuestion.Text = "Вопрос 1:  название данной программы";
             // 
             // FormQuestion
             // 
