@@ -17,6 +17,7 @@ namespace _120Game
             InitializeComponent();
             pictureBoxIcon1.Image = Properties.Resources.Кнопка;
             pictureBoxIcon2.Image = Properties.Resources.Кнопка;
+            Icon = Properties.Resources.BigIcon;
 
             labelName.Text = "120 Вопросов для октябрят";
         }
