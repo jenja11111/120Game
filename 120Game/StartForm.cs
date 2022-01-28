@@ -41,5 +41,10 @@ namespace _120Game
         {
             Close();
         }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Игра была создана для Хожовской СШ.\nКод и составляющие разработал: Морозов Е.А.\nДизайн и идея проекта: Морозов А.В.", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
