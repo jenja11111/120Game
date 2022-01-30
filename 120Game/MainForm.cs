@@ -97,8 +97,16 @@ namespace _120Game
             }
             else if (e.KeyValue == (char)Keys.Escape)
             {
-                if (DialogResult.OK == MessageBox.Show("Вы уверены, что хотите выйти?", "Подтверждение", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning))
+                DialogResult dR = MessageBox.Show("Хотите сохранить игру?", "Подтверждение", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+                if (DialogResult.Yes == dR)
+                {
+                    QuestionsComponent.writeAllFile();
                     Application.Exit();
+                }      
+                else if(DialogResult.No == dR)
+                {
+                    Application.Exit();
+                }
             }
         }
     }
