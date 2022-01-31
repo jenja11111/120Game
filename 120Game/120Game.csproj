@@ -164,6 +164,7 @@
     <Content Include="bin\Debug\Questions\Health\QCode\7.png" />
     <Content Include="bin\Debug\Questions\Health\QCode\8.png" />
     <Content Include="bin\Debug\Questions\Health\QCode\9.jpg" />
+    <Content Include="bin\Debug\Questions\Health\Save.txt" />
     <Content Include="bin\Debug\Questions\Logic\Logic.txt" />
     <Content Include="bin\Debug\Questions\Logic\QCode\1.png" />
     <Content Include="bin\Debug\Questions\Logic\QCode\10.png" />
@@ -185,6 +186,7 @@
     <Content Include="bin\Debug\Questions\Logic\QCode\7.png" />
     <Content Include="bin\Debug\Questions\Logic\QCode\8.png" />
     <Content Include="bin\Debug\Questions\Logic\QCode\9.png" />
+    <Content Include="bin\Debug\Questions\Logic\Save.txt" />
     <Content Include="bin\Debug\Questions\Motherland\Images\15.png" />
     <Content Include="bin\Debug\Questions\Motherland\Images\16.png" />
     <Content Include="bin\Debug\Questions\Motherland\Images\19.png" />
@@ -210,6 +212,7 @@
     <Content Include="bin\Debug\Questions\Motherland\QCode\7.png" />
     <Content Include="bin\Debug\Questions\Motherland\QCode\8.png" />
     <Content Include="bin\Debug\Questions\Motherland\QCode\9.png" />
+    <Content Include="bin\Debug\Questions\Motherland\Save.txt" />
     <Content Include="bin\Debug\Questions\Nature\Nature.txt" />
     <Content Include="bin\Debug\Questions\Nature\QCode\1.jpg" />
     <Content Include="bin\Debug\Questions\Nature\QCode\10.jpg" />
@@ -231,6 +234,7 @@
     <Content Include="bin\Debug\Questions\Nature\QCode\7.jpg" />
     <Content Include="bin\Debug\Questions\Nature\QCode\8.jpg" />
     <Content Include="bin\Debug\Questions\Nature\QCode\9.jpg" />
+    <Content Include="bin\Debug\Questions\Nature\Save.txt" />
     <Content Include="bin\Debug\Questions\Pioneers\Pioneers.txt" />
     <Content Include="bin\Debug\Questions\Pioneers\QCode\1.png" />
     <Content Include="bin\Debug\Questions\Pioneers\QCode\10.png" />
@@ -252,6 +256,7 @@
     <Content Include="bin\Debug\Questions\Pioneers\QCode\7.png" />
     <Content Include="bin\Debug\Questions\Pioneers\QCode\8.png" />
     <Content Include="bin\Debug\Questions\Pioneers\QCode\9.png" />
+    <Content Include="bin\Debug\Questions\Pioneers\Save.txt" />
     <Content Include="bin\Debug\Questions\Security\Images\10.png" />
     <Content Include="bin\Debug\Questions\Security\Images\12.png" />
     <Content Include="bin\Debug\Questions\Security\Images\13.png" />
@@ -281,6 +286,7 @@
     <Content Include="bin\Debug\Questions\Security\QCode\7.png" />
     <Content Include="bin\Debug\Questions\Security\QCode\8.png" />
     <Content Include="bin\Debug\Questions\Security\QCode\9.png" />
+    <Content Include="bin\Debug\Questions\Security\Save.txt" />
     <Content Include="bin\Debug\Questions\Security\Security.txt" />
     <None Include="Resources\BigIcon.ico" />
     <None Include="Resources\Icon.ico" />

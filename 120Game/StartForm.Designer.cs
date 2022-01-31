@@ -133,6 +133,7 @@ namespace _120Game
             this.buttonLoad.TabIndex = 0;
             this.buttonLoad.Text = "Загрузить игру";
             this.buttonLoad.UseVisualStyleBackColor = true;
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
             // buttonStart
             // 
